@@ -10,6 +10,8 @@ form:
             type: text
             validate:
                 required: true
+                pattern: '^((?!https?:\/\/)(?:\R|.))*$'
+                message: 'Additional information field can''t contain links'
         email:
             label: Email
             placeholder: 'Enter your email address'
